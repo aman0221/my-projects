@@ -32,7 +32,7 @@ def show_temp():
       label.pack()
       foot.mainloop()
    elif unit == "F" and update == "1":  
-      txt = ("Current temperature in " + api_response['location']['name']+" is "+str(api_response['current']['temperature']+32) + " fahrenheit")
+      txt = ("Current temperature in " + api_response['location']['name']+" is "+str(api_response['current']['temperature']*9/5+32) + " fahrenheit")
       label=Label(foot, text= txt)
       label.pack()
       foot.mainloop()
