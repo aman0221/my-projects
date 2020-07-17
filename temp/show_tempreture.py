@@ -38,12 +38,12 @@ def show_temp():
       foot.mainloop()
       #print(u'Current temperature in %s is %d' % (api_response['location']['name'], api_response['current']['temperature']+32))
    elif unit == "C" and update == "0":
-      txt = ("Current temperature in " + api_response['location']['name']+" is "+str(32) + " degree celsius")
+      txt = ("the updating process is stoped now")
       label=Label(foot, text= txt)
       label.pack()
       foot.mainloop()
    elif unit == "F" and update == "0":      
-      txt = ("Current temperature in " + api_response['location']['name']+" is "+str(23) + " fahrenheit")
+      txt = ("the updating process is stoped now")
       label=Label(foot, text= txt)
       label.pack()
       foot.mainloop()
